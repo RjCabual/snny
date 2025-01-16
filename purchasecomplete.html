@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Done</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            height: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            border-radius: 10px;
+            margin-top: 40px;
+            padding: 20px;
+            margin-left: 40%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .form-container h2 {
+            color: #66FCF1;
+            margin-top: 25px;
+        }
+        
+        .form-container p {
+            color: #66FCF1;
+            margin-bottom: 20px;
+        }
+
+        .form-container button {
+            background-color: #66FCF1;
+            color: #0b0c10;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #45A29E;
+        }
+
+        .sidebar {
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            padding: 20px;
+            margin-top: 40px;
+            margin-left: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .sidebar h2 {
+            color: #66FCF1;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sidebar p {
+            margin: 10px 0;
+            color: #c5c6c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Order Done</h2>
+            <p>Complete your information using your mobile phone to ensure the security of the payment.</p>
+            <button type="button" onclick="goToHomePage()">Home</button>
+        </div>
+
+        <div class="sidebar">
+            <h2>Owner Details</h2>
+            <p><strong>Name:</strong> Marilou Cabison</p>
+            <p><strong>Position:</strong> Owner</p>
+            <p><strong>Email:</strong> sammuel123@gmail.com</p>
+            <p><strong>Phone:</strong> 09123456789</p>
+            <p><strong>Visit:</strong> Sanny Motor Works at Zone V Muzon West, San Jose del Monte Bulacan to see more products!!!</p>
+            <p><strong>Opening Hours:</strong></p>
+            <p>Mon-Sun: 8 AM - 6 PM</p>
+        </div>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            // Redirect to the home page
+            window.location.href = 'addtocart.html';
+        }
+    </script>
+</body>
+</html>

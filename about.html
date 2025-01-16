@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanny Motor Works - About</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #1f2833;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: #2A8F9E; /* Updated background color */
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav .logo-link img {
+            width: 100px;
+            margin-left: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        nav .logo-link img:hover {
+            transform: scale(1.1); /* Slightly enlarge logo on hover */
+        }
+
+        nav .nav-title {
+            margin-left: 20px; /* Adjusted margin for spacing */
+            font-size: 1.5em;
+        }
+
+        nav .nav-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav .nav-links a {
+            color: #66FCF1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        nav .nav-links a:hover {
+            color: #45A29E;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px; /* Increase max-width to accommodate sidebar */
+            margin: 80px auto 20px; /* Add top margin to account for fixed nav */
+            padding: 0 20px; /* Padding for better content spacing */
+        }
+
+        .main-content {
+            flex: 3;
+            text-align: left;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #66FCF1;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #2c3e50; /* Darker background for better readability */
+            padding: 15px;
+            border-radius: 8px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start */
+        }
+
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #66FCF1;
+        }
+
+        .sidebar p {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .contact-info {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .contact-info a {
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar .contact-info a:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        .sidebar .contact-info img {
+            width: 30px; /* Adjusted size for icons */
+            height: 30px;
+        }
+
+        .sidebar .location-link {
+            display: inline-block;
+            color: #66FCF1;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar .location-link:hover {
+            background-color: #54d1f0;
+            color: #003D80;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            z-index: -1;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            padding: 1rem;
+            background-color: none;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="Sanny Motor Works Logo">
+        </a>
+        <div class="nav-title">About</div> <!-- Added About title -->
+        <div class="nav-links">
+            <!-- Add more links as needed -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>About Sanny Motor Works</h1>
+            <p>Sanny Motor Works is a leading supplier of quality motor parts for various vehicles. We specialize in providing reliable and affordable solutions for our customers' motor needs.</p>
+
+            <p>Our mission is to ensure that our customers receive the highest quality parts to keep their vehicles running smoothly. We source our products from trusted manufacturers and conduct rigorous quality checks to ensure durability and performance.</p>
+
+            <p>At Sanny Motor Works, we take pride in our commitment to customer satisfaction. Our knowledgeable and friendly staff are always ready to assist you in finding the right parts for your vehicle and answering any questions you may have.</p>
+
+            <p>Whether you're a professional mechanic or a car enthusiast, you can rely on Sanny Motor Works to provide you with the parts you need at competitive prices. We offer a wide range of motor parts, including engines, transmissions, brakes, suspension components, and more.</p>
+
+            <p>Thank you for choosing Sanny Motor Works as your trusted motor parts supplier. We look forward to serving you and helping you keep your vehicles running smoothly.</p>
+        </div>
+
+        <div class="sidebar">
+            <h2>Owner Details</h2>
+            <p><strong>Name:</strong> Marilou Cabison</p>
+            <p><strong>Position:</strong> Owner</p>
+            <p><strong>Email:</strong> sammuel123@gmail.com</p>
+            <p><strong>Phone:</strong> 09123456789</p>
+            
+            <h2>Business Manager</h2>
+            <p><strong>Name:</strong> Sammuel Cabison</p>
+            <p><strong>Phone:</strong> 09771429336</p>
+
+            <h2>Mechanics</h2>
+            <p><strong>Christopher Jorge De Vera</strong></p>
+            <p>09663415541</p>
+            <p><strong>John Carlo De Vera</strong></p>
+            <p>09565224724</p>
+            <p><strong>Mark Gumafelix</strong></p>
+            <p>09052196869</p>
+            
+            <p><strong>Location:</strong> <a href="https://www.google.com/maps?q=Zone+V+Muzon+West,+San+Jose+del+Monte+Bulacan" target="_blank" class="location-link">View on Google Maps</a></p>
+
+            <!-- Updated contact information with icons -->
+            <div class="contact-info">
+                <a href="https://www.facebook.com/SannyMotorWorks" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/SannyMotorWorks" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Sanny Motor Works. All rights reserved.
+    </div>
+</body>
+</html>

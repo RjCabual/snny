@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add styles for mobile verification page */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            color: #66FCF1;
+            margin-bottom: 20px;
+        }
+        .form-container p {
+            color: #66FCF1;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #66FCF1;
+        }
+
+        .form-container input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #66FCF1;
+            border-radius: 5px;
+            background-color: #0b0c10;
+            color: #ffffff;
+            width: calc(100% - 22px);
+        }
+
+        .form-container button {
+            background-color: #66FCF1;
+            color: #0b0c10;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #45A29E;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Mobile Number Verification</h2>
+        <form id="mobileNumberForm">
+            <label for="mobileNumber">Enter your mobile number:</label>
+            <p>It will send the code and form to your mobile phone, please verify and fill your complete information.</p>
+            <input type="text" id="mobileNumber" name="mobileNumber" required pattern="[0-9]{11}">
+            <button type="button" onclick="proceedToCompletePurchase()">Proceed</button>
+        </form>
+    </div>
+
+    <script>
+         function proceedToCompletePurchase() {
+            
+            const mobileNumber = document.getElementById('mobileNumber').value;
+            if (!mobileNumber) {
+                alert('Please enter your mobile number.');
+                return;
+            }
+
+            let paymentDetails = JSON.parse(localStorage.getItem('paymentDetails')) || {};
+            paymentDetails.mobileNumber = mobileNumber;
+
+            localStorage.setItem('paymentDetails', JSON.stringify(paymentDetails));
+
+            // Redirect to completepurchase.html
+            window.location.href = 'purchasecomplete.html';
+        
+        }
+            
+        
+    </script>
+</body>
+</html>

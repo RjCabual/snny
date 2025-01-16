@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanny Motor Works - Services</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            overflow-x: hidden; /* Allow horizontal scrolling */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #2A8F9E 30%, #3C4B99 100%);
+            background-color: #2A8F9E;
+            padding: 10px 20px; /* Increased padding */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .navbar img {
+            height: 80px; /* Adjusted logo height */
+            cursor: pointer; /* Cursor pointer on logo for indicating it's clickable */
+            justify-content: baseline;
+        }
+
+        .navbar-title {
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            margin-top: 10px; /* Adjusted margin top */
+        }
+
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 0 1 30%; /* Adjusted width for responsiveness */
+        }
+
+        .service img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+            
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><img src="logo.png" alt="Sanny Motor Works Logo"></a>
+        <h1 class="navbar-title">Services</h1>
+    </header>
+    <section class="services">
+        <!-- Service 1: Oil Change -->
+        <div class="service">
+            <img src="6.jpg" alt="Oil Change Service">
+            <div class="service-content">
+                <h2>Oil Change</h2>
+                <p>An Oil Change is the act of removing the used oil in your engine and replacing it with
+                    new, clean oil. Over time, oil breaks down and gets dirty. These factors make oil much
+                    less slippery and less effective at their job of lubricating engine parts.</p>
+            </div>
+        </div>
+
+        <!-- Service 2: Fuel Injection Cleaning -->
+        <div class="service">
+            <img src="3.jpg" alt="Fuel Injection Cleaning Service">
+            <div class="service-content">
+                <h2>Fuel Injection Cleaning</h2>
+                <p>Burning fuel leaves carbon deposits over time. These deposits tend to create a layer of
+                    build-up on the fuel injectors. A fuel injector cleaning service flushes out all the buildup and cleans the injector. By removing all the build-up of carbon deposits and
+                    flushing them out of the fuel system helps restore and maximize:
+                  <p>– Fuel Economy</p>
+                  <p> – Fights rust and corrosion</p> 
+                  <p>– Reduces friction and wear</p></p>  
+            </div>
+        </div>
+
+        <!-- Service 3: Vehicle Modification -->
+        <div class="service">
+            <img src="4.jpg" alt="Vehicle Modification Service">
+            <div class="service-content">
+                <h2>Vehicle Modification</h2>
+                <p>Changes made to the engine, brakes or suspension are all considered performanceenhancing modifications. So whether you want more noise, quicker acceleration, better
+                    braking or improved handling, there are performance-enhancing modifications that
+                    will help you get the performance you want.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="1.jpg" alt="Engine Overhauling">
+            <div class="service-content">
+                <h2>Engine Overhauling</h2>
+                <p>Full engine repair includes the overall overhaul of the motorcycle, which includes:
+                    Cylinder Head Rebuilding. Cylinder Boring. Camshaft Replacement/Repair.
+                    Replacement of Oil Pump, Head Fasteners, Spark Plugs, Valves, Spring, etc.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
